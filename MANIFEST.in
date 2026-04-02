@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include uv.lock
+recursive-include fcalendar *.py
+recursive-include fcalendar *.typed

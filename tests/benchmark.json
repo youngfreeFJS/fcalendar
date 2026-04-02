@@ -1,0 +1,1486 @@
+[
+  {
+    "id": "relative_weekday_01",
+    "description": "下周四 -> 具体日期",
+    "query": "三个大人下周四去香港",
+    "mock_today": "2026-02-13",
+    "expected": "三个大人下周四去香港（今天是2026 年 2 月 13 日，下周四是2 月 19 日）"
+  },
+  {
+    "id": "relative_weekend_01",
+    "description": "下周末 -> 周六-周日",
+    "query": "下周末去杭州玩",
+    "mock_today": "2026-02-13",
+    "expected": "下周末去杭州玩（今天是2026 年 2 月 13 日，下周末是2026 年 2 月 21 日-2026 年 2 月 22 日）"
+  },
+  {
+    "id": "holiday_spring_festival_01",
+    "description": "春节 -> 假期日期范围",
+    "query": "一个学生春节去日本",
+    "mock_today": "2026-02-13",
+    "expected": "一个学生春节去日本（今天是2026 年 2 月 13 日，春节是2026 年 2 月 15 日-2026 年 2 月 23 日）"
+  },
+  {
+    "id": "multi_xia_weekend_01",
+    "description": "下下下下周末 -> 4周后的周末",
+    "query": "小朋友下下下下周末去杭州玩",
+    "mock_today": "2026-02-13",
+    "expected": "小朋友下下下下周末去杭州玩（今天是2026 年 2 月 13 日，下下下下周末是2026 年 3 月 14 日-2026 年 3 月 15 日）"
+  },
+  {
+    "id": "multi_xia_weekday_01",
+    "description": "下下周三 -> 2周后的周三",
+    "query": "下下周三开会",
+    "mock_today": "2026-02-13",
+    "expected": "下下周三开会（今天是2026 年 2 月 13 日，下下周三是2 月 25 日）"
+  },
+  {
+    "id": "xia_week_01",
+    "description": "下周一 -> 1周后的周一",
+    "query": "下周一开会",
+    "mock_today": "2026-03-18",
+    "expected": "下周一开会（今天是2026 年 3 月 18 日，下周一是3 月 23 日）"
+  },
+  {
+    "id": "xia_xia_week_01",
+    "description": "下下周二 -> 2周后的周二",
+    "query": "下下周二去旅游",
+    "mock_today": "2026-03-18",
+    "expected": "下下周二去旅游（今天是2026 年 3 月 18 日，下下周二是3 月 31 日）"
+  },
+  {
+    "id": "xia_xia_xia_week_01",
+    "description": "下下下周三 -> 3周后的周三",
+    "query": "下下下周三交报告",
+    "mock_today": "2026-03-18",
+    "expected": "下下下周三交报告（今天是2026 年 3 月 18 日，下下下周三是4 月 8 日）"
+  },
+  {
+    "id": "xia_4_week_01",
+    "description": "下下下下周四 -> 4周后的周四",
+    "query": "下下下下周四面试",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下周四面试（今天是2026 年 3 月 18 日，下下下下周四是4 月 16 日）"
+  },
+  {
+    "id": "xia_5_week_01",
+    "description": "下下下下下周五 -> 5周后的周五",
+    "query": "下下下下下周五聚餐",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下周五聚餐（今天是2026 年 3 月 18 日，下下下下下周五是4 月 24 日）"
+  },
+  {
+    "id": "xia_6_week_01",
+    "description": "下下下下下下周六 -> 6周后的周六",
+    "query": "下下下下下下周六去爬山",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下周六去爬山（今天是2026 年 3 月 18 日，下下下下下下周六是5 月 2 日）"
+  },
+  {
+    "id": "xia_7_week_01",
+    "description": "下下下下下下下周日 -> 7周后的周日",
+    "query": "下下下下下下下周日休息",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下周日休息（今天是2026 年 3 月 18 日，下下下下下下下周日是5 月 10 日）"
+  },
+  {
+    "id": "xia_8_week_01",
+    "description": "下下下下下下下下周一 -> 8周后的周一",
+    "query": "下下下下下下下下周一开始新项目",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下下周一开始新项目（今天是2026 年 3 月 18 日，下下下下下下下下周一是5 月 11 日）"
+  },
+  {
+    "id": "xia_9_week_01",
+    "description": "下下下下下下下下下周二 -> 9周后的周二",
+    "query": "下下下下下下下下下周二出差",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下下下周二出差（今天是2026 年 3 月 18 日，下下下下下下下下下周二是5 月 19 日）"
+  },
+  {
+    "id": "xia_10_week_01",
+    "description": "下下下下下下下下下下周三 -> 10周后的周三",
+    "query": "下下下下下下下下下下周三参加会议",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下下下下周三参加会议（今天是2026 年 3 月 18 日，下下下下下下下下下下周三是5 月 27 日）"
+  },
+  {
+    "id": "xia_month_01",
+    "description": "下个月 -> 1个月后",
+    "query": "下个月交报告",
+    "mock_today": "2026-03-18",
+    "expected": "下个月交报告（今天是2026 年 3 月 18 日，下个月是2026 年 4 月 1 日-2026 年 4 月 30 日）"
+  },
+  {
+    "id": "xia_xia_month_01",
+    "description": "下下个月 -> 2个月后",
+    "query": "下下个月开会",
+    "mock_today": "2026-03-18",
+    "expected": "下下个月开会（今天是2026 年 3 月 18 日，下下个月是2026 年 5 月 1 日-2026 年 5 月 31 日）"
+  },
+  {
+    "id": "xia_xia_xia_month_01",
+    "description": "下下下个月 -> 3个月后",
+    "query": "下下下个月去旅游",
+    "mock_today": "2026-03-18",
+    "expected": "下下下个月去旅游（今天是2026 年 3 月 18 日，下下下个月是2026 年 6 月 1 日-2026 年 6 月 30 日）"
+  },
+  {
+    "id": "xia_4_month_01",
+    "description": "下下下下个月 -> 4个月后",
+    "query": "下下下下个月出差",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下个月出差（今天是2026 年 3 月 18 日，下下下下个月是2026 年 7 月 1 日-2026 年 7 月 31 日）"
+  },
+  {
+    "id": "xia_5_month_01",
+    "description": "下下下下下个月 -> 5个月后",
+    "query": "下下下下下个月参加培训",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下个月参加培训（今天是2026 年 3 月 18 日，下下下下下个月是2026 年 8 月 1 日-2026 年 8 月 31 日）"
+  },
+  {
+    "id": "xia_6_month_01",
+    "description": "下下下下下下个月 -> 6个月后",
+    "query": "下下下下下下个月换工作",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下个月换工作（今天是2026 年 3 月 18 日，下下下下下下个月是2026 年 9 月 1 日-2026 年 9 月 30 日）"
+  },
+  {
+    "id": "xia_7_month_01",
+    "description": "下下下下下下下个月 -> 7个月后",
+    "query": "下下下下下下下个月搬家",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下个月搬家（今天是2026 年 3 月 18 日，下下下下下下下个月是2026 年 10 月 1 日-2026 年 10 月 31 日）"
+  },
+  {
+    "id": "xia_8_month_01",
+    "description": "下下下下下下下下个月 -> 8个月后",
+    "query": "下下下下下下下下个月结婚",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下下个月结婚（今天是2026 年 3 月 18 日，下下下下下下下下个月是2026 年 11 月 1 日-2026 年 11 月 30 日）"
+  },
+  {
+    "id": "xia_9_month_01",
+    "description": "下下下下下下下下下个月 -> 9个月后",
+    "query": "下下下下下下下下下个月买房",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下下下个月买房（今天是2026 年 3 月 18 日，下下下下下下下下下个月是2026 年 12 月 1 日-2026 年 12 月 31 日）"
+  },
+  {
+    "id": "xia_10_month_01",
+    "description": "下下下下下下下下下下个月 -> 10个月后",
+    "query": "下下下下下下下下下下个月去度假",
+    "mock_today": "2026-03-18",
+    "expected": "下下下下下下下下下下个月去度假（今天是2026 年 3 月 18 日，下下下下下下下下下下个月是2027 年 1 月 1 日-2027 年 1 月 31 日）"
+  },
+  {
+    "id": "relative_tomorrow_01",
+    "description": "明天 -> 具体日期",
+    "query": "明天去上海出差",
+    "mock_today": "2026-02-13",
+    "expected": "明天去上海出差（今天是2026 年 2 月 13 日，明天是2026 年 2 月 14 日）"
+  },
+  {
+    "id": "relative_day_after_tomorrow_01",
+    "description": "后天 -> 具体日期",
+    "query": "后天有个面试",
+    "mock_today": "2026-02-13",
+    "expected": "后天有个面试（今天是2026 年 2 月 13 日，后天是2026 年 2 月 15 日）"
+  },
+  {
+    "id": "houtian_01",
+    "description": "后天 -> +2天（确保基础功能不受影响）",
+    "query": "后天去上海",
+    "mock_today": "2026-03-18",
+    "expected": "后天去上海（今天是2026 年 3 月 18 日，后天是2026 年 3 月 20 日）"
+  },
+  {
+    "id": "mingtian_01",
+    "description": "明天 -> +1天（确保基础功能不受影响）",
+    "query": "明天开会",
+    "mock_today": "2026-03-18",
+    "expected": "明天开会（今天是2026 年 3 月 18 日，明天是2026 年 3 月 19 日）"
+  },
+  {
+    "id": "da_houtian_01",
+    "description": "大后天 -> +3天",
+    "query": "大后天去旅游",
+    "mock_today": "2026-03-18",
+    "expected": "大后天去旅游（今天是2026 年 3 月 18 日，大后天是2026 年 3 月 21 日）"
+  },
+  {
+    "id": "da_da_houtian_01",
+    "description": "大大后天 -> +4天",
+    "query": "大大后天开会",
+    "mock_today": "2026-03-18",
+    "expected": "大大后天开会（今天是2026 年 3 月 18 日，大大后天是2026 年 3 月 22 日）"
+  },
+  {
+    "id": "da_da_da_houtian_01",
+    "description": "大大大后天 -> +5天",
+    "query": "大大大后天交报告",
+    "mock_today": "2026-03-18",
+    "expected": "大大大后天交报告（今天是2026 年 3 月 18 日，大大大后天是2026 年 3 月 23 日）"
+  },
+  {
+    "id": "da_da_da_da_houtian_01",
+    "description": "大大大大后天 -> +6天",
+    "query": "大大大大后天周二几点出发比较合适",
+    "mock_today": "2026-03-18",
+    "expected": "大大大大后天周二几点出发比较合适（今天是2026 年 3 月 18 日，大大大大后天是2026 年 3 月 24 日，周二是2026 年 3 月 24 日）"
+  },
+  {
+    "id": "relative_great_day_after_01",
+    "description": "大后天 -> 具体日期",
+    "query": "大后天回老家",
+    "mock_today": "2026-02-13",
+    "expected": "大后天回老家（今天是2026 年 2 月 13 日，大后天是2026 年 2 月 16 日）"
+  },
+  {
+    "id": "this_weekend_01",
+    "description": "这周末 -> 本周六-周日",
+    "query": "这周末去爬山",
+    "mock_today": "2026-02-13",
+    "expected": "这周末去爬山（今天是2026 年 2 月 13 日，这周末是2026 年 2 月 14 日-2026 年 2 月 15 日）"
+  },
+  {
+    "id": "this_weekday_01",
+    "description": "本周六 -> 具体日期",
+    "query": "本周六聚餐",
+    "mock_today": "2026-02-13",
+    "expected": "本周六聚餐（今天是2026 年 2 月 13 日，本周六是2 月 14 日）"
+  },
+  {
+    "id": "holiday_national_day_01",
+    "description": "国庆节 -> 假期日期范围",
+    "query": "国庆节出去旅游",
+    "mock_today": "2026-02-13",
+    "expected": "国庆节出去旅游（今天是2026 年 2 月 13 日，国庆节是2026 年 10 月 1 日-2026 年 10 月 7 日）"
+  },
+  {
+    "id": "holiday_labour_day_01",
+    "description": "劳动节 -> 假期日期范围",
+    "query": "劳动节去三亚",
+    "mock_today": "2026-02-13",
+    "expected": "劳动节去三亚（今天是2026 年 2 月 13 日，劳动节是2026 年 5 月 1 日-2026 年 5 月 5 日）"
+  },
+  {
+    "id": "next_month_01",
+    "description": "下个月 -> 月份范围",
+    "query": "下个月搬家",
+    "mock_today": "2026-02-13",
+    "expected": "下个月搬家（今天是2026 年 2 月 13 日，下个月是2026 年 3 月 1 日-2026 年 3 月 31 日）"
+  },
+  {
+    "id": "no_time_expression_01",
+    "description": "没有时间表达式 -> 原文不变",
+    "query": "今天天气真好",
+    "mock_today": "2026-02-13",
+    "expected": "今天天气真好（今天是2026 年 2 月 13 日，今天是北京时间 2026 年 2 月 13 日 00:00:00）"
+  },
+  {
+    "id": "multiple_expressions_01",
+    "description": "多个时间表达同时出现",
+    "query": "明天开会，下周末去旅游",
+    "mock_today": "2026-02-13",
+    "expected": "明天开会，下周末去旅游（今天是2026 年 2 月 13 日，明天是2026 年 2 月 14 日，下周末是2026 年 2 月 21 日-2026 年 2 月 22 日）"
+  },
+  {
+    "id": "lunar_zhengyue_shiwu_01",
+    "description": "正月十五（元宵节）-> 公历日期",
+    "query": "正月十五去看花灯",
+    "mock_today": "2026-02-13",
+    "expected": "正月十五去看花灯（今天是2026 年 2 月 13 日，正月十五是2026 年 3 月 3 日）"
+  },
+  {
+    "id": "lunar_layue_ershisan_01",
+    "description": "腊月二十三（小年）-> 公历日期",
+    "query": "腊月二十三祭灶",
+    "mock_today": "2026-02-13",
+    "expected": "腊月二十三祭灶（今天是2026 年 2 月 13 日，腊月二十三是2027 年 1 月 30 日）"
+  },
+  {
+    "id": "lunar_mixed_01",
+    "description": "农历日期 + 公历相对时间混合",
+    "query": "明天开会，正月十五去旅游",
+    "mock_today": "2026-02-13",
+    "expected": "明天开会，正月十五去旅游（今天是2026 年 2 月 13 日，明天是2026 年 2 月 14 日，正月十五是2026 年 3 月 3 日）"
+  },
+  {
+    "id": "lunar_wuyue_chuyi_01",
+    "description": "五月初一 -> 公历日期",
+    "query": "五月初一去庙会",
+    "mock_today": "2026-02-13",
+    "expected": "五月初一去庙会（今天是2026 年 2 月 13 日，五月初一是2026 年 6 月 15 日）"
+  },
+  {
+    "id": "lunar_zhengyue_typo_01",
+    "description": "整月初五（正月的常见错别字）-> 公历日期",
+    "query": "整月初五去拜年",
+    "mock_today": "2026-02-13",
+    "expected": "整月初五去拜年（今天是2026 年 2 月 13 日，整月初五是2026 年 2 月 21 日）"
+  },
+  {
+    "id": "year_prefix_last_year_festival_01",
+    "description": "去年元宵节 -> 去年正月十五的公历日期",
+    "query": "去年元宵节去哪玩",
+    "mock_today": "2026-02-13",
+    "expected": "去年元宵节去哪玩（今天是2026 年 2 月 13 日，去年元宵节是2025 年 2 月 12 日）"
+  },
+  {
+    "id": "year_prefix_last_year_lunar_date_01",
+    "description": "去年正月十五 -> 去年农历正月十五的公历日期",
+    "query": "去年正月十五吃了汤圆",
+    "mock_today": "2026-02-13",
+    "expected": "去年正月十五吃了汤圆（今天是2026 年 2 月 13 日，去年正月十五是2025 年 2 月 12 日）"
+  },
+  {
+    "id": "year_prefix_specific_year_01",
+    "description": "2024年七夕 -> 指定年份农历七月初七的公历日期",
+    "query": "2024年七夕在哪过的",
+    "mock_today": "2026-02-13",
+    "expected": "2024年七夕在哪过的（今天是2026 年 2 月 13 日，2024年七夕是2024 年 8 月 10 日）"
+  },
+  {
+    "id": "year_prefix_next_year_01",
+    "description": "明年元宵节 -> 明年正月十五的公历日期",
+    "query": "明年元宵节去看灯会",
+    "mock_today": "2026-02-13",
+    "expected": "明年元宵节去看灯会（今天是2026 年 2 月 13 日，明年元宵节是2027 年 2 月 20 日）"
+  },
+  {
+    "id": "lunar_festival_yuanxiao_01",
+    "description": "元宵节 -> 正月十五对应的公历日期",
+    "query": "元宵节去哪玩",
+    "mock_today": "2026-02-13",
+    "expected": "元宵节去哪玩（今天是2026 年 2 月 13 日，元宵节是2026 年 3 月 3 日）"
+  },
+  {
+    "id": "lunar_festival_qixi_01",
+    "description": "七夕 -> 七月初七对应的公历日期",
+    "query": "七夕去约会",
+    "mock_today": "2026-02-13",
+    "expected": "七夕去约会（今天是2026 年 2 月 13 日，七夕是2026 年 8 月 19 日）"
+  },
+  {
+    "id": "western_festival_halloween_01",
+    "description": "万圣节 -> 10月31日",
+    "query": "万圣节去哪玩",
+    "mock_today": "2026-02-13",
+    "expected": "万圣节去哪玩（今天是2026 年 2 月 13 日，万圣节是2026 年 10 月 31 日）"
+  },
+  {
+    "id": "western_festival_christmas_01",
+    "description": "圣诞节 -> 12月25日",
+    "query": "圣诞节买什么礼物",
+    "mock_today": "2026-02-13",
+    "expected": "圣诞节买什么礼物（今天是2026 年 2 月 13 日，圣诞节是2026 年 12 月 25 日）"
+  },
+  {
+    "id": "western_festival_valentine_01",
+    "description": "情人节 -> 2月14日（今年已过则取下一年）",
+    "query": "情人节送什么花",
+    "mock_today": "2026-02-13",
+    "expected": "情人节送什么花（今天是2026 年 2 月 13 日，情人节是2026 年 2 月 14 日）"
+  },
+  {
+    "id": "western_festival_with_year_01",
+    "description": "去年圣诞节 -> 指定年份",
+    "query": "去年圣诞节收到了什么",
+    "mock_today": "2026-02-13",
+    "expected": "去年圣诞节收到了什么（今天是2026 年 2 月 13 日，去年圣诞节是2025 年 12 月 25 日）"
+  },
+  {
+    "id": "season_winter_01",
+    "description": "冬季 -> 日期范围",
+    "query": "冬季去滑雪",
+    "mock_today": "2026-02-13",
+    "expected": "冬季去滑雪（今天是2026 年 2 月 13 日，冬季是2026 年 12 月 1 日-2027 年 2 月 28 日）"
+  },
+  {
+    "id": "season_summer_01",
+    "description": "夏天 -> 日期范围",
+    "query": "夏天去海边",
+    "mock_today": "2026-02-13",
+    "expected": "夏天去海边（今天是2026 年 2 月 13 日，夏天是2026 年 6 月 1 日-2026 年 8 月 31 日）"
+  },
+  {
+    "id": "season_with_year_01",
+    "description": "去年秋天 -> 指定年份日期范围",
+    "query": "去年秋天去了北京",
+    "mock_today": "2026-02-13",
+    "expected": "去年秋天去了北京（今天是2026 年 2 月 13 日，去年秋天是2025 年 9 月 1 日-2025 年 11 月 30 日）"
+  },
+  {
+    "id": "solar_term_chunfen_01",
+    "description": "春分 -> 约3月20日",
+    "query": "春分去踏青",
+    "mock_today": "2026-02-13",
+    "expected": "春分去踏青（今天是2026 年 2 月 13 日，春分是2026 年 3 月 20 日）"
+  },
+  {
+    "id": "solar_term_dongzhi_01",
+    "description": "冬至 -> 约12月22日",
+    "query": "冬至吃饺子",
+    "mock_today": "2026-02-13",
+    "expected": "冬至吃饺子（今天是2026 年 2 月 13 日，冬至是2026 年 12 月 22 日）"
+  },
+  {
+    "id": "solar_term_with_year_01",
+    "description": "去年立秋 -> 指定年份",
+    "query": "去年立秋特别热",
+    "mock_today": "2026-02-13",
+    "expected": "去年立秋特别热（今天是2026 年 2 月 13 日，去年立秋是2025 年 8 月 7 日）"
+  },
+  {
+    "id": "specific_date_01",
+    "description": "具体公历日期 7月15日",
+    "query": "预定7月15日前往巴黎的机票",
+    "mock_today": "2026-02-13",
+    "expected": "预定7月15日前往巴黎的机票（今天是2026 年 2 月 13 日，7月15日是2026 年 7 月 15 日）"
+  },
+  {
+    "id": "specific_date_with_year_01",
+    "description": "带年份的具体公历日期 2023年7月15日",
+    "query": "2023年7月15日出发去旅行",
+    "mock_today": "2026-02-13",
+    "expected": "2023年7月15日出发去旅行（今天是2026 年 2 月 13 日，2023年7月15日是2023 年 7 月 15 日）"
+  },
+  {
+    "id": "bare_weekday_01",
+    "description": "无前缀周三 -> 向前看逻辑：周五问周三（已过），返回下周三",
+    "query": "选择周三参观博物馆避开人流高峰",
+    "mock_today": "2026-02-13",
+    "expected": "选择周三参观博物馆避开人流高峰（今天是2026 年 2 月 13 日，周三是2026 年 2 月 18 日）"
+  },
+  {
+    "id": "bare_weekday_forward_looking_01",
+    "description": "向前看逻辑：周三问周二（已过），返回下周二",
+    "query": "周二是几号",
+    "mock_today": "2026-03-18",
+    "expected": "周二是几号（今天是2026 年 3 月 18 日，周二是2026 年 3 月 24 日）"
+  },
+  {
+    "id": "bare_weekday_forward_looking_02",
+    "description": "向前看逻辑：周三问周四（未过），返回本周四",
+    "query": "周四是几号",
+    "mock_today": "2026-03-18",
+    "expected": "周四是几号（今天是2026 年 3 月 18 日，周四是2026 年 3 月 19 日）"
+  },
+  {
+    "id": "bare_weekday_forward_looking_03",
+    "description": "向前看逻辑：周日问周一（已过），返回下周一",
+    "query": "周一开会",
+    "mock_today": "2026-03-22",
+    "expected": "周一开会（今天是2026 年 3 月 22 日，周一是2026 年 3 月 23 日）"
+  },
+  {
+    "id": "bare_weekday_forward_looking_04",
+    "description": "向前看逻辑：周一问周日（已过），返回本周日",
+    "query": "周日去爬山",
+    "mock_today": "2026-03-23",
+    "expected": "周日去爬山（今天是2026 年 3 月 23 日，周日是2026 年 3 月 29 日）"
+  },
+  {
+    "id": "this_week_forward_looking_01",
+    "description": "本周X 向前看逻辑：周五问本周二（已过），返回下周二",
+    "query": "本周二交报告",
+    "mock_today": "2026-03-20",
+    "expected": "本周二交报告（今天是2026 年 3 月 20 日，本周二是3 月 24 日）"
+  },
+  {
+    "id": "this_week_forward_looking_02",
+    "description": "这周X 向前看逻辑：周三问这周一（已过），返回下周一",
+    "query": "这周一有安排吗",
+    "mock_today": "2026-03-18",
+    "expected": "这周一有安排吗（今天是2026 年 3 月 18 日，这周一是3 月 23 日）"
+  },
+  {
+    "id": "solar_date_prefix_01",
+    "description": "阳历12月25日 -> 公历日期",
+    "query": "阳历12月25日参加海外圣诞庆典",
+    "mock_today": "2026-02-13",
+    "expected": "阳历12月25日参加海外圣诞庆典（今天是2026 年 2 月 13 日，阳历12月25日是2026 年 12 月 25 日，圣诞是2026 年 12 月 25 日）"
+  },
+  {
+    "id": "easter_01",
+    "description": "复活节 -> 动态计算日期",
+    "query": "复活节去教堂",
+    "mock_today": "2026-02-13",
+    "expected": "复活节去教堂（今天是2026 年 2 月 13 日，复活节是2026 年 4 月 5 日）"
+  },
+  {
+    "id": "ramadan_01",
+    "description": "斋月 -> 动态计算日期范围",
+    "query": "斋月期间白天避免在穆斯林国家饮食",
+    "mock_today": "2026-02-13",
+    "expected": "斋月期间白天避免在穆斯林国家饮食（今天是2026 年 2 月 13 日，斋月是2026 年 2 月 18 日-2026 年 3 月 19 日）"
+  },
+  {
+    "id": "thanksgiving_01",
+    "description": "感恩节 -> 11月第4个周四",
+    "query": "感恩节聚餐",
+    "mock_today": "2026-02-13",
+    "expected": "感恩节聚餐（今天是2026 年 2 月 13 日，感恩节是2026 年 11 月 26 日）"
+  },
+  {
+    "id": "annual_cycle_q4_01",
+    "description": "Q4 -> 10-12月范围",
+    "query": "Q4安排投资者会议",
+    "mock_today": "2026-02-13",
+    "expected": "Q4安排投资者会议（今天是2026 年 2 月 13 日，Q4是2026 年 10 月 1 日-2026 年 12 月 31 日）"
+  },
+  {
+    "id": "annual_cycle_s1_01",
+    "description": "上半年 -> 1-6月范围",
+    "query": "上半年完成目标",
+    "mock_today": "2026-02-13",
+    "expected": "上半年完成目标（今天是2026 年 2 月 13 日，上半年是2026 年 1 月 1 日-2026 年 6 月 30 日）"
+  },
+  {
+    "id": "independence_day_01",
+    "description": "7月4日 -> 美国独立日（具体日期识别）",
+    "query": "7月4日在美国观看独立日烟花",
+    "mock_today": "2026-02-13",
+    "expected": "7月4日在美国观看独立日烟花（今天是2026 年 2 月 13 日，7月4日是2026 年 7 月 4 日，独立日是2026 年 7 月 4 日）"
+  },
+  {
+    "id": "lunar_zhengyue_chuyi_01",
+    "description": "正月初一（农历专有月份名+初X日期）-> 应识别为农历",
+    "query": "正月初一拜年",
+    "mock_today": "2026-03-15",
+    "expected": "正月初一拜年（今天是2026 年 3 月 15 日，正月初一是2027 年 2 月 6 日）"
+  },
+  {
+    "id": "lunar_layue_ershijiu_01",
+    "description": "腊月二十九（农历专有月份名+非初X日期）-> 应识别为农历",
+    "query": "腊月二十九守岁",
+    "mock_today": "2026-03-15",
+    "expected": "腊月二十九守岁（今天是2026 年 3 月 15 日，腊月二十九是2027 年 2 月 5 日）"
+  },
+  {
+    "id": "lunar_dongyue_shiwu_01",
+    "description": "冬月十五（农历专有月份名冬+非初X日期）-> 应识别为农历",
+    "query": "冬月十五去赶集",
+    "mock_today": "2026-03-15",
+    "expected": "冬月十五去赶集（今天是2026 年 3 月 15 日，冬月十五是2026 年 12 月 23 日）"
+  },
+  {
+    "id": "lunar_zhengyue_typo_chusi_01",
+    "description": "整月初三（整=正月的常见错别字，专有月份名+初X日期）-> 应识别为农历",
+    "query": "整月初三去拜年",
+    "mock_today": "2026-03-15",
+    "expected": "整月初三去拜年（今天是2026 年 3 月 15 日，整月初三是2027 年 2 月 8 日）"
+  },
+  {
+    "id": "lunar_bayue_chuwu_01",
+    "description": "八月初五（数字月份+初X日期）-> 应识别为农历",
+    "query": "八月初五去登山",
+    "mock_today": "2026-03-15",
+    "expected": "八月初五去登山（今天是2026 年 3 月 15 日，八月初五是2026 年 9 月 15 日）"
+  },
+  {
+    "id": "lunar_sanyue_chuyi_01",
+    "description": "三月初一（数字月份+初X日期）-> 应识别为农历",
+    "query": "三月初一踏青",
+    "mock_today": "2026-03-15",
+    "expected": "三月初一踏青（今天是2026 年 3 月 15 日，三月初一是2026 年 4 月 17 日）"
+  },
+  {
+    "id": "lunar_wuyue_chushi_01",
+    "description": "五月初十（数字月份+初X日期）-> 应识别为农历",
+    "query": "五月初十去庙会",
+    "mock_today": "2026-03-15",
+    "expected": "五月初十去庙会（今天是2026 年 3 月 15 日，五月初十是2026 年 6 月 24 日）"
+  },
+  {
+    "id": "lunar_jiuyue_chujiu_01",
+    "description": "九月初九（数字月份+初X日期，重阳节）-> 应识别为农历",
+    "query": "九月初九重阳登高",
+    "mock_today": "2026-03-15",
+    "expected": "九月初九重阳登高（今天是2026 年 3 月 15 日，九月初九是2026 年 10 月 18 日，重阳是2026 年 10 月 18 日）"
+  },
+  {
+    "id": "lunar_qiyue_chuqi_01",
+    "description": "七月初七（数字月份+初X日期，七夕）-> 应识别为农历",
+    "query": "七月初七鹊桥相会",
+    "mock_today": "2026-03-15",
+    "expected": "七月初七鹊桥相会（今天是2026 年 3 月 15 日，七月初七是2026 年 8 月 19 日）"
+  },
+  {
+    "id": "lunar_zhengyue_ershi_01",
+    "description": "正月二十（农历专有月份名+非初X日期）-> 应识别为农历",
+    "query": "正月二十去走亲戚",
+    "mock_today": "2026-03-15",
+    "expected": "正月二十去走亲戚（今天是2026 年 3 月 15 日，正月二十是2027 年 2 月 25 日）"
+  },
+  {
+    "id": "not_lunar_sanyue_shiba_01",
+    "description": "三月十八号（数字月份+非初X日期）-> 不应识别为农历，原文不变",
+    "query": "改成三月十八号的票",
+    "mock_today": "2026-03-15",
+    "expected": "改成三月十八号的票"
+  },
+  {
+    "id": "not_lunar_wuyue_ershi_01",
+    "description": "五月二十号（数字月份+非初X日期）-> 不应识别为农历，原文不变",
+    "query": "五月二十号出发去旅行",
+    "mock_today": "2026-03-15",
+    "expected": "五月二十号出发去旅行"
+  },
+  {
+    "id": "not_lunar_bayue_shiwu_01",
+    "description": "八月十五号（数字月份+非初X日期，口语公历写法）-> 不应识别为农历，原文不变",
+    "query": "八月十五号回家吃饭",
+    "mock_today": "2026-03-15",
+    "expected": "八月十五号回家吃饭"
+  },
+  {
+    "id": "not_lunar_eryue_ershiba_01",
+    "description": "二月二十八号（数字月份+非初X日期）-> 不应识别为农历，原文不变",
+    "query": "二月二十八号提交报告",
+    "mock_today": "2026-03-15",
+    "expected": "二月二十八号提交报告"
+  },
+  {
+    "id": "not_lunar_shiyue_yi_01",
+    "description": "十月一号（数字月份+非初X日期，国庆口语写法）-> 不应识别为农历，原文不变",
+    "query": "十月一号去北京",
+    "mock_today": "2026-03-15",
+    "expected": "十月一号去北京"
+  },
+  {
+    "id": "not_lunar_liuyue_liu_01",
+    "description": "六月六号（数字月份+非初X日期）-> 不应识别为农历，原文不变",
+    "query": "六月六号参加婚礼",
+    "mock_today": "2026-03-15",
+    "expected": "六月六号参加婚礼"
+  },
+  {
+    "id": "not_lunar_yiyue_sanshi_01",
+    "description": "一月三十号（数字月份+非初X日期）-> 不应识别为农历，原文不变",
+    "query": "一月三十号还款",
+    "mock_today": "2026-03-15",
+    "expected": "一月三十号还款"
+  },
+  {
+    "id": "not_lunar_siyue_si_01",
+    "description": "四月四号（数字月份+非初X日期）-> 不应识别为农历，原文不变",
+    "query": "四月四号清明扫墓",
+    "mock_today": "2026-03-15",
+    "expected": "四月四号清明扫墓"
+  },
+  {
+    "id": "not_lunar_qiyue_qi_01",
+    "description": "七月七号（数字月份+非初X日期，口语公历写法）-> 不应识别为农历，原文不变",
+    "query": "七月七号去看演唱会",
+    "mock_today": "2026-03-15",
+    "expected": "七月七号去看演唱会"
+  },
+  {
+    "id": "not_lunar_jiuyue_jiu_with_holiday_01",
+    "description": "九月九号重阳节（数字月份+非初X日期，但含节日名称）-> 节日名称应被识别，日期本身不走农历",
+    "query": "九月九号重阳节登高",
+    "mock_today": "2026-03-15",
+    "expected": "九月九号重阳节登高（今天是2026 年 3 月 15 日，重阳节是2026 年 10 月 18 日）"
+  },
+  {
+    "id": "lunar_prefix_cn_month_shiwu_01",
+    "description": "农历+中文数字月份+非初X日期（农历三月十五）-> 有明确农历前缀，应识别为农历",
+    "query": "农历三月十五去踏青",
+    "mock_today": "2026-03-15",
+    "expected": "农历三月十五去踏青（今天是2026 年 3 月 15 日，农历三月十五是2026 年 5 月 1 日）"
+  },
+  {
+    "id": "yinli_prefix_cn_month_shiba_01",
+    "description": "阴历+中文数字月份+非初X日期（阴历三月十八）-> 有明确阴历前缀，应识别为农历",
+    "query": "阴历三月十八号的票",
+    "mock_today": "2026-03-15",
+    "expected": "阴历三月十八号的票（今天是2026 年 3 月 15 日，阴历三月十八是2026 年 5 月 4 日）"
+  },
+  {
+    "id": "lunar_prefix_digit_month_01",
+    "description": "农历+数字月份+数字日期（农历8月15日）-> 有明确农历前缀，应识别为农历",
+    "query": "农历8月15日赏月",
+    "mock_today": "2026-03-15",
+    "expected": "农历8月15日赏月（今天是2026 年 3 月 15 日，农历8月15日是2026 年 9 月 25 日）"
+  },
+  {
+    "id": "lunar_prefix_cn_month_shierye_ershijiu_01",
+    "description": "农历+中文数字月份十二月+非初X日期（农历十二月二十九）-> 有明确农历前缀，应识别为农历",
+    "query": "农历十二月二十九守岁",
+    "mock_today": "2026-03-15",
+    "expected": "农历十二月二十九守岁（今天是2026 年 3 月 15 日，农历十二月二十九是2027 年 2 月 5 日）"
+  },
+  {
+    "id": "yinli_prefix_cn_month_no_prefix_contrast_01",
+    "description": "同一文本中阴历前缀日期与无前缀日期对比：阴历三月十八应识别，三月十八号不应识别",
+    "query": "阴历三月十八号改签",
+    "mock_today": "2026-03-15",
+    "expected": "阴历三月十八号改签（今天是2026 年 3 月 15 日，阴历三月十八是2026 年 5 月 4 日）"
+  },
+  {
+    "id": "current_time_keyword_01",
+    "description": "当前时间 -> 北京时间",
+    "query": "当前时间是几点",
+    "mock_today": "2026-03-17",
+    "expected": "当前时间是几点（今天是2026 年 3 月 17 日，当前时间是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_02",
+    "description": "现在 -> 北京时间",
+    "query": "现在去机场来得及吗",
+    "mock_today": "2026-03-17",
+    "expected": "现在去机场来得及吗（今天是2026 年 3 月 17 日，现在是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_03",
+    "description": "当前 -> 北京时间",
+    "query": "当前的天气怎么样",
+    "mock_today": "2026-03-17",
+    "expected": "当前的天气怎么样（今天是2026 年 3 月 17 日，当前是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_04",
+    "description": "目前 -> 北京时间",
+    "query": "目前还有票吗",
+    "mock_today": "2026-03-17",
+    "expected": "目前还有票吗（今天是2026 年 3 月 17 日，目前是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_05",
+    "description": "此时 -> 北京时间",
+    "query": "此时的温度是多少",
+    "mock_today": "2026-03-17",
+    "expected": "此时的温度是多少（今天是2026 年 3 月 17 日，此时是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_06",
+    "description": "此刻 -> 北京时间",
+    "query": "此刻我很开心",
+    "mock_today": "2026-03-17",
+    "expected": "此刻我很开心（今天是2026 年 3 月 17 日，此刻是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_07",
+    "description": "眼下 -> 北京时间",
+    "query": "眼下最重要的是什么",
+    "mock_today": "2026-03-17",
+    "expected": "眼下最重要的是什么（今天是2026 年 3 月 17 日，眼下是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_08",
+    "description": "当下 -> 北京时间",
+    "query": "当下的情况如何",
+    "mock_today": "2026-03-17",
+    "expected": "当下的情况如何（今天是2026 年 3 月 17 日，当下是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_09",
+    "description": "这会儿 -> 北京时间",
+    "query": "这会儿出发合适吗",
+    "mock_today": "2026-03-17",
+    "expected": "这会儿出发合适吗（今天是2026 年 3 月 17 日，这会儿是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "current_time_keyword_10",
+    "description": "这时候 -> 北京时间",
+    "query": "这时候应该做什么",
+    "mock_today": "2026-03-17",
+    "expected": "这时候应该做什么（今天是2026 年 3 月 17 日，这时候是北京时间 2026 年 3 月 17 日 00:00:00）"
+  },
+  {
+    "id": "no_current_keyword_01",
+    "description": "不包含任何当前时间关键词",
+    "query": "明天去上海",
+    "mock_today": "2026-03-17",
+    "expected": "明天去上海（今天是2026 年 3 月 17 日，明天是2026 年 3 月 18 日）"
+  },
+  {
+    "id": "no_current_keyword_02",
+    "description": "不包含任何当前时间关键词",
+    "query": "下周末去旅游",
+    "mock_today": "2026-03-17",
+    "expected": "下周末去旅游（今天是2026 年 3 月 17 日，下周末是2026 年 3 月 28 日-2026 年 3 月 29 日）"
+  },
+  {
+    "id": "no_current_keyword_03",
+    "description": "不包含任何当前时间关键词",
+    "query": "春节去哪玩",
+    "mock_today": "2026-03-17",
+    "expected": "春节去哪玩（今天是2026 年 3 月 17 日，春节是2026 年 2 月 15 日-2026 年 2 月 23 日）"
+  },
+  {
+    "id": "no_current_keyword_04",
+    "description": "不包含任何当前时间关键词",
+    "query": "预定7月15日的机票",
+    "mock_today": "2026-03-17",
+    "expected": "预定7月15日的机票（今天是2026 年 3 月 17 日，7月15日是2026 年 7 月 15 日）"
+  },
+  {
+    "id": "no_current_keyword_05",
+    "description": "不包含任何当前时间关键词",
+    "query": "正月十五看花灯",
+    "mock_today": "2026-03-17",
+    "expected": "正月十五看花灯（今天是2026 年 3 月 17 日，正月十五是2027 年 2 月 20 日）"
+  },
+  {
+    "id": "no_current_keyword_06",
+    "description": "不包含任何当前时间关键词",
+    "query": "圣诞节买礼物",
+    "mock_today": "2026-03-17",
+    "expected": "圣诞节买礼物（今天是2026 年 3 月 17 日，圣诞节是2026 年 12 月 25 日）"
+  },
+  {
+    "id": "no_current_keyword_07",
+    "description": "不包含任何当前时间关键词",
+    "query": "冬季去滑雪",
+    "mock_today": "2026-03-17",
+    "expected": "冬季去滑雪（今天是2026 年 3 月 17 日，冬季是2026 年 12 月 1 日-2027 年 2 月 28 日）"
+  },
+  {
+    "id": "no_current_keyword_08",
+    "description": "不包含任何当前时间关键词",
+    "query": "Q4开会",
+    "mock_today": "2026-03-17",
+    "expected": "Q4开会（今天是2026 年 3 月 17 日，Q4是2026 年 10 月 1 日-2026 年 12 月 31 日）"
+  },
+  {
+    "id": "no_current_keyword_09",
+    "description": "不包含任何当前时间关键词",
+    "query": "去年元宵节去哪了",
+    "mock_today": "2026-03-17",
+    "expected": "去年元宵节去哪了（今天是2026 年 3 月 17 日，去年元宵节是2025 年 2 月 12 日）"
+  },
+  {
+    "id": "no_current_keyword_10",
+    "description": "不包含任何当前时间关键词",
+    "query": "改成三月十五",
+    "mock_today": "2026-03-17",
+    "expected": "改成三月十五"
+  },
+  {
+    "id": "multi_da_houtian_01",
+    "description": "大大后天 -> 4天后",
+    "query": "大大后天去北京",
+    "mock_today": "2026-03-15",
+    "expected": "大大后天去北京（今天是2026 年 3 月 15 日，大大后天是2026 年 3 月 19 日）"
+  },
+  {
+    "id": "multi_da_houtian_02",
+    "description": "大大大后天 -> 5天后",
+    "query": "大大大后天开会",
+    "mock_today": "2026-03-15",
+    "expected": "大大大后天开会（今天是2026 年 3 月 15 日，大大大后天是2026 年 3 月 20 日）"
+  },
+  {
+    "id": "season_spring_01",
+    "description": "春季/春天 -> 3-5月",
+    "query": "春季去踏青",
+    "mock_today": "2026-03-15",
+    "expected": "春季去踏青（今天是2026 年 3 月 15 日，春季是2026 年 3 月 1 日-2026 年 5 月 31 日）"
+  },
+  {
+    "id": "season_summer_01",
+    "description": "夏季/夏天 -> 6-8月",
+    "query": "夏天去海边",
+    "mock_today": "2026-03-15",
+    "expected": "夏天去海边（今天是2026 年 3 月 15 日，夏天是2026 年 6 月 1 日-2026 年 8 月 31 日）"
+  },
+  {
+    "id": "season_autumn_01",
+    "description": "秋季/秋天 -> 9-11月",
+    "query": "秋季赏枫叶",
+    "mock_today": "2026-03-15",
+    "expected": "秋季赏枫叶（今天是2026 年 3 月 15 日，秋季是2026 年 9 月 1 日-2026 年 11 月 30 日）"
+  },
+  {
+    "id": "season_winter_01",
+    "description": "冬季/冬天 -> 12月-次年2月（跨年）",
+    "query": "冬天去滑雪",
+    "mock_today": "2026-03-15",
+    "expected": "冬天去滑雪（今天是2026 年 3 月 15 日，冬天是2026 年 12 月 1 日-2027 年 2 月 28 日）"
+  },
+  {
+    "id": "season_with_year_prefix_01",
+    "description": "去年冬季 -> 带年份前缀的季节",
+    "query": "去年冬季很冷",
+    "mock_today": "2026-03-15",
+    "expected": "去年冬季很冷（今天是2026 年 3 月 15 日，去年冬季是2025 年 12 月 1 日-2026 年 2 月 28 日）"
+  },
+  {
+    "id": "solar_term_chunfen_01",
+    "description": "春分 -> 3月20日左右",
+    "query": "春分时节去赏花",
+    "mock_today": "2026-03-15",
+    "expected": "春分时节去赏花（今天是2026 年 3 月 15 日，春分是2026 年 3 月 20 日）"
+  },
+  {
+    "id": "solar_term_dongzhi_01",
+    "description": "冬至 -> 12月21日左右",
+    "query": "冬至吃饺子",
+    "mock_today": "2026-03-15",
+    "expected": "冬至吃饺子（今天是2026 年 3 月 15 日，冬至是2026 年 12 月 22 日）"
+  },
+  {
+    "id": "solar_term_lichun_01",
+    "description": "立春 -> 2月4日左右",
+    "query": "立春迎新年",
+    "mock_today": "2026-03-15",
+    "expected": "立春迎新年（今天是2026 年 3 月 15 日，立春是2027 年 2 月 4 日）"
+  },
+  {
+    "id": "solar_term_with_year_01",
+    "description": "2024年立秋 -> 带年份的节气",
+    "query": "2024年立秋是哪天",
+    "mock_today": "2026-03-15",
+    "expected": "2024年立秋是哪天（今天是2026 年 3 月 15 日，2024年立秋是2024 年 8 月 7 日）"
+  },
+  {
+    "id": "multi_xia_month_01",
+    "description": "下下个月 -> 2个月后",
+    "query": "下下个月去旅游",
+    "mock_today": "2026-03-15",
+    "expected": "下下个月去旅游（今天是2026 年 3 月 15 日，下下个月是2026 年 5 月 1 日-2026 年 5 月 31 日）"
+  },
+  {
+    "id": "multi_xia_month_02",
+    "description": "下下下个月 -> 3个月后",
+    "query": "下下下个月开会",
+    "mock_today": "2026-03-15",
+    "expected": "下下下个月开会（今天是2026 年 3 月 15 日，下下下个月是2026 年 6 月 1 日-2026 年 6 月 30 日）"
+  },
+  {
+    "id": "multi_xia_month_cross_year_01",
+    "description": "下下下...个月跨年 -> 跨年的月份计算",
+    "query": "下下下下下下下下下下个月见",
+    "mock_today": "2026-03-15",
+    "expected": "下下下下下下下下下下个月见（今天是2026 年 3 月 15 日，下下下下下下下下下下个月是2027 年 1 月 1 日-2027 年 1 月 31 日）"
+  },
+  {
+    "id": "gregorian_date_with_year_01",
+    "description": "2027年1月15日 -> 完整公历日期",
+    "query": "2027年1月15日开会",
+    "mock_today": "2026-03-15",
+    "expected": "2027年1月15日开会（今天是2026 年 3 月 15 日，2027年1月15日是2027 年 1 月 15 日）"
+  },
+  {
+    "id": "gregorian_date_month_day_01",
+    "description": "7月15日 -> 月日格式",
+    "query": "7月15日去海边",
+    "mock_today": "2026-03-15",
+    "expected": "7月15日去海边（今天是2026 年 3 月 15 日，7月15日是2026 年 7 月 15 日）"
+  },
+  {
+    "id": "gregorian_date_with_hao_01",
+    "description": "8月20号 -> 带'号'的日期",
+    "query": "8月20号出发",
+    "mock_today": "2026-03-15",
+    "expected": "8月20号出发（今天是2026 年 3 月 15 日，8月20号是2026 年 8 月 20 日）"
+  },
+  {
+    "id": "single_month_01",
+    "description": "7月 -> 单独月份",
+    "query": "7月去度假",
+    "mock_today": "2026-03-15",
+    "expected": "7月去度假（今天是2026 年 3 月 15 日，7月是2026 年 7 月 1 日-2026 年 7 月 31 日）"
+  },
+  {
+    "id": "single_month_02",
+    "description": "12月 -> 单独月份",
+    "query": "12月很冷",
+    "mock_today": "2026-03-15",
+    "expected": "12月很冷（今天是2026 年 3 月 15 日，12月是2026 年 12 月 1 日-2026 年 12 月 31 日）"
+  },
+  {
+    "id": "easter_01",
+    "description": "复活节 -> 计算复活节日期",
+    "query": "复活节去教堂",
+    "mock_today": "2026-03-15",
+    "expected": "复活节去教堂（今天是2026 年 3 月 15 日，复活节是2026 年 4 月 5 日）"
+  },
+  {
+    "id": "easter_with_year_01",
+    "description": "2025年复活节 -> 带年份的复活节",
+    "query": "2025年复活节是哪天",
+    "mock_today": "2026-03-15",
+    "expected": "2025年复活节是哪天（今天是2026 年 3 月 15 日，2025年复活节是2025 年 4 月 20 日）"
+  },
+  {
+    "id": "ramadan_01",
+    "description": "斋月 -> 伊斯兰斋月",
+    "query": "斋月期间注意事项",
+    "mock_today": "2026-03-15",
+    "expected": "斋月期间注意事项（今天是2026 年 3 月 15 日，斋月是2026 年 2 月 18 日-2026 年 3 月 19 日）"
+  },
+  {
+    "id": "annual_cycle_q2_01",
+    "description": "Q2 -> 第二季度",
+    "query": "Q2业绩报告",
+    "mock_today": "2026-03-15",
+    "expected": "Q2业绩报告（今天是2026 年 3 月 15 日，Q2是2026 年 4 月 1 日-2026 年 6 月 30 日）"
+  },
+  {
+    "id": "annual_cycle_q3_01",
+    "description": "Q3 -> 第三季度",
+    "query": "Q3销售目标",
+    "mock_today": "2026-03-15",
+    "expected": "Q3销售目标（今天是2026 年 3 月 15 日，Q3是2026 年 7 月 1 日-2026 年 9 月 30 日）"
+  },
+  {
+    "id": "annual_cycle_first_half_01",
+    "description": "上半年 -> 1-6月",
+    "query": "上半年总结",
+    "mock_today": "2026-03-15",
+    "expected": "上半年总结（今天是2026 年 3 月 15 日，上半年是2026 年 1 月 1 日-2026 年 6 月 30 日）"
+  },
+  {
+    "id": "annual_cycle_second_half_01",
+    "description": "下半年 -> 7-12月",
+    "query": "下半年计划",
+    "mock_today": "2026-03-15",
+    "expected": "下半年计划（今天是2026 年 3 月 15 日，下半年是2026 年 7 月 1 日-2026 年 12 月 31 日）"
+  },
+  {
+    "id": "weekday_no_prefix_01",
+    "description": "周三 -> 无前缀，默认本周",
+    "query": "周三参观博物馆",
+    "mock_today": "2026-03-16",
+    "expected": "周三参观博物馆（今天是2026 年 3 月 16 日，周三是2026 年 3 月 18 日）"
+  },
+  {
+    "id": "this_weekend_01",
+    "description": "这周末/本周末 -> 本周的周末",
+    "query": "这周末去爬山",
+    "mock_today": "2026-03-16",
+    "expected": "这周末去爬山（今天是2026 年 3 月 16 日，这周末是2026 年 3 月 21 日-2026 年 3 月 22 日）"
+  },
+  {
+    "id": "this_week_monday_01",
+    "description": "这周一/本周一 -> 本周的周一（今天是周三，本周一已过，指向下周一）",
+    "query": "本周一开会",
+    "mock_today": "2026-03-18",
+    "expected": "本周一开会（今天是2026 年 3 月 18 日，本周一是3 月 23 日）"
+  },
+  {
+    "id": "complex_multi_time_01",
+    "description": "复杂多时间表达式组合",
+    "query": "明天开会，下周末去旅游，春节回家，Q2做总结",
+    "mock_today": "2026-03-15",
+    "expected": "明天开会，下周末去旅游，春节回家，Q2做总结（今天是2026 年 3 月 15 日，明天是2026 年 3 月 16 日，下周末是2026 年 3 月 21 日-2026 年 3 月 22 日，春节是2026 年 2 月 15 日-2026 年 2 月 23 日，Q2是2026 年 4 月 1 日-2026 年 6 月 30 日）"
+  },
+  {
+    "id": "en_relative_today_01",
+    "description": "English: today -> current date",
+    "query": "meeting today",
+    "mock_today": "2026-03-15",
+    "expected": "meeting today (Today is March 15, 2026, today is March 15, 2026)"
+  },
+  {
+    "id": "en_relative_tomorrow_01",
+    "description": "English: tomorrow -> next day",
+    "query": "flight tomorrow",
+    "mock_today": "2026-03-15",
+    "expected": "flight tomorrow (Today is March 15, 2026, tomorrow is March 16, 2026)"
+  },
+  {
+    "id": "en_relative_day_after_tomorrow_01",
+    "description": "English: day after tomorrow -> 2 days later",
+    "query": "travel day after tomorrow",
+    "mock_today": "2026-03-15",
+    "expected": "travel day after tomorrow (Today is March 15, 2026, day after tomorrow is March 17, 2026)"
+  },
+  {
+    "id": "en_relative_next_week_01",
+    "description": "English: next week -> 7 days later",
+    "query": "conference next week",
+    "mock_today": "2026-03-15",
+    "expected": "conference next week (Today is March 15, 2026, next week is March 22, 2026)"
+  },
+  {
+    "id": "en_relative_next_month_01",
+    "description": "English: next month -> next month range",
+    "query": "vacation next month",
+    "mock_today": "2026-03-15",
+    "expected": "vacation next month (Today is March 15, 2026, next month is April 1, 2026 - April 30, 2026)"
+  },
+  {
+    "id": "en_weekday_monday_01",
+    "description": "English: Monday -> this Monday",
+    "query": "meeting Monday",
+    "mock_today": "2026-03-15",
+    "expected": "meeting Monday (Today is March 15, 2026, Monday is March 16, 2026)"
+  },
+  {
+    "id": "en_weekday_tuesday_01",
+    "description": "English: Tuesday -> this Tuesday",
+    "query": "appointment Tuesday",
+    "mock_today": "2026-03-15",
+    "expected": "appointment Tuesday (Today is March 15, 2026, Tuesday is March 17, 2026)"
+  },
+  {
+    "id": "en_weekday_wednesday_01",
+    "description": "English: Wednesday -> this Wednesday",
+    "query": "visit museum Wednesday",
+    "mock_today": "2026-03-15",
+    "expected": "visit museum Wednesday (Today is March 15, 2026, Wednesday is March 18, 2026)"
+  },
+  {
+    "id": "en_weekday_thursday_01",
+    "description": "English: Thursday -> this Thursday",
+    "query": "dinner Thursday",
+    "mock_today": "2026-03-15",
+    "expected": "dinner Thursday (Today is March 15, 2026, Thursday is March 19, 2026)"
+  },
+  {
+    "id": "en_weekday_friday_01",
+    "description": "English: Friday -> this Friday",
+    "query": "party Friday",
+    "mock_today": "2026-03-15",
+    "expected": "party Friday (Today is March 15, 2026, Friday is March 20, 2026)"
+  },
+  {
+    "id": "en_weekday_saturday_01",
+    "description": "English: Saturday -> this Saturday",
+    "query": "shopping Saturday",
+    "mock_today": "2026-03-15",
+    "expected": "shopping Saturday (Today is March 15, 2026, Saturday is March 21, 2026)"
+  },
+  {
+    "id": "en_weekday_sunday_01",
+    "description": "English: Sunday -> this Sunday (today is Sunday)",
+    "query": "church Sunday",
+    "mock_today": "2026-03-15",
+    "expected": "church Sunday (Today is March 15, 2026, Sunday is March 15, 2026)"
+  },
+  {
+    "id": "en_next_monday_01",
+    "description": "English: next Monday -> next week Monday",
+    "query": "meeting next Monday",
+    "mock_today": "2026-03-15",
+    "expected": "meeting next Monday (Today is March 15, 2026, next Monday is March 16, 2026)"
+  },
+  {
+    "id": "en_next_tuesday_01",
+    "description": "English: next Tuesday -> next week Tuesday",
+    "query": "appointment next Tuesday",
+    "mock_today": "2026-03-15",
+    "expected": "appointment next Tuesday (Today is March 15, 2026, next Tuesday is March 17, 2026)"
+  },
+  {
+    "id": "en_this_weekend_01",
+    "description": "English: this weekend -> this Saturday and Sunday",
+    "query": "party this weekend",
+    "mock_today": "2026-03-15",
+    "expected": "party this weekend (Today is March 15, 2026, this weekend is March 21, 2026 - March 22, 2026)"
+  },
+  {
+    "id": "en_next_weekend_01",
+    "description": "English: next weekend -> next Saturday and Sunday",
+    "query": "travel next weekend",
+    "mock_today": "2026-03-15",
+    "expected": "travel next weekend (Today is March 15, 2026, next weekend is March 21, 2026 - March 22, 2026)"
+  },
+  {
+    "id": "en_festival_christmas_01",
+    "description": "English: Christmas -> December 25",
+    "query": "buy gifts for Christmas",
+    "mock_today": "2026-03-15",
+    "expected": "buy gifts for Christmas (Today is March 15, 2026, Christmas is December 25, 2026)"
+  },
+  {
+    "id": "en_festival_halloween_01",
+    "description": "English: Halloween -> October 31",
+    "query": "Halloween party",
+    "mock_today": "2026-03-15",
+    "expected": "Halloween party (Today is March 15, 2026, Halloween is October 31, 2026)"
+  },
+  {
+    "id": "en_festival_valentine_01",
+    "description": "English: Valentine's Day -> February 14",
+    "query": "Valentine's Day flowers",
+    "mock_today": "2026-03-15",
+    "expected": "Valentine's Day flowers (Today is March 15, 2026, Valentine's Day is February 14, 2027)"
+  },
+  {
+    "id": "en_festival_thanksgiving_01",
+    "description": "English: Thanksgiving -> fourth Thursday of November",
+    "query": "Thanksgiving dinner",
+    "mock_today": "2026-03-15",
+    "expected": "Thanksgiving dinner"
+  },
+  {
+    "id": "en_festival_easter_01",
+    "description": "English: Easter -> calculated Easter date",
+    "query": "Easter church service",
+    "mock_today": "2026-03-15",
+    "expected": "Easter church service"
+  },
+  {
+    "id": "en_festival_new_year_01",
+    "description": "English: New Year's Day -> January 1",
+    "query": "New Year's Day celebration",
+    "mock_today": "2026-03-15",
+    "expected": "New Year's Day celebration (Today is March 15, 2026, New Year's Day is January 1, 2027)"
+  },
+  {
+    "id": "en_festival_independence_day_01",
+    "description": "English: Independence Day -> July 4",
+    "query": "Independence Day fireworks",
+    "mock_today": "2026-03-15",
+    "expected": "Independence Day fireworks (Today is March 15, 2026, Independence Day is July 4, 2026)"
+  },
+  {
+    "id": "en_date_january_15_01",
+    "description": "English: January 15 -> specific date",
+    "query": "meeting on January 15",
+    "mock_today": "2026-03-15",
+    "expected": "meeting on January 15 (Today is March 15, 2026, January 15 is January 15, 2027)"
+  },
+  {
+    "id": "en_date_july_15th_01",
+    "description": "English: July 15th -> specific date with ordinal",
+    "query": "vacation July 15th",
+    "mock_today": "2026-03-15",
+    "expected": "vacation July 15th (Today is March 15, 2026, July 15th is July 15, 2026)"
+  },
+  {
+    "id": "en_date_with_year_01",
+    "description": "English: January 15, 2027 -> full date with year",
+    "query": "conference on January 15, 2027",
+    "mock_today": "2026-03-15",
+    "expected": "conference on January 15, 2027 (Today is March 15, 2026, January 15, 2027 is January 15, 2027)"
+  },
+  {
+    "id": "en_date_short_month_01",
+    "description": "English: Jan 15 -> short month name",
+    "query": "meeting Jan 15",
+    "mock_today": "2026-03-15",
+    "expected": "meeting Jan 15 (Today is March 15, 2026, Jan 15 is January 15, 2027)"
+  },
+  {
+    "id": "en_date_feb_28_01",
+    "description": "English: Feb 28 -> February date",
+    "query": "deadline Feb 28",
+    "mock_today": "2026-03-15",
+    "expected": "deadline Feb 28 (Today is March 15, 2026, Feb 28 is February 28, 2027)"
+  },
+  {
+    "id": "en_date_mar_20_01",
+    "description": "English: Mar 20 -> March date",
+    "query": "event Mar 20",
+    "mock_today": "2026-03-15",
+    "expected": "event Mar 20 (Today is March 15, 2026, Mar 20 is March 20, 2026)"
+  },
+  {
+    "id": "en_date_apr_10_01",
+    "description": "English: Apr 10 -> April date",
+    "query": "trip Apr 10",
+    "mock_today": "2026-03-15",
+    "expected": "trip Apr 10 (Today is March 15, 2026, Apr 10 is April 10, 2026)"
+  },
+  {
+    "id": "en_date_may_5_01",
+    "description": "English: May 5 -> May date",
+    "query": "party May 5",
+    "mock_today": "2026-03-15",
+    "expected": "party May 5 (Today is March 15, 2026, May 5 is May 5, 2026)"
+  },
+  {
+    "id": "en_date_jun_20_01",
+    "description": "English: Jun 20 -> June date",
+    "query": "wedding Jun 20",
+    "mock_today": "2026-03-15",
+    "expected": "wedding Jun 20 (Today is March 15, 2026, Jun 20 is June 20, 2026)"
+  },
+  {
+    "id": "en_date_aug_15_01",
+    "description": "English: Aug 15 -> August date",
+    "query": "vacation Aug 15",
+    "mock_today": "2026-03-15",
+    "expected": "vacation Aug 15 (Today is March 15, 2026, Aug 15 is August 15, 2026)"
+  },
+  {
+    "id": "en_date_sep_1_01",
+    "description": "English: Sep 1 -> September date",
+    "query": "school starts Sep 1",
+    "mock_today": "2026-03-15",
+    "expected": "school starts Sep 1 (Today is March 15, 2026, Sep 1 is September 1, 2026)"
+  },
+  {
+    "id": "en_date_oct_31_01",
+    "description": "English: Oct 31 -> October date",
+    "query": "deadline Oct 31",
+    "mock_today": "2026-03-15",
+    "expected": "deadline Oct 31 (Today is March 15, 2026, Oct 31 is October 31, 2026)"
+  },
+  {
+    "id": "en_date_nov_15_01",
+    "description": "English: Nov 15 -> November date",
+    "query": "meeting Nov 15",
+    "mock_today": "2026-03-15",
+    "expected": "meeting Nov 15 (Today is March 15, 2026, Nov 15 is November 15, 2026)"
+  },
+  {
+    "id": "en_date_dec_25_01",
+    "description": "English: Dec 25 -> December date",
+    "query": "party Dec 25",
+    "mock_today": "2026-03-15",
+    "expected": "party Dec 25 (Today is March 15, 2026, Dec 25 is December 25, 2026)"
+  },
+  {
+    "id": "en_date_ordinal_1st_01",
+    "description": "English: March 1st -> date with 1st ordinal",
+    "query": "meeting March 1st",
+    "mock_today": "2026-03-15",
+    "expected": "meeting March 1st (Today is March 15, 2026, March 1st is March 1, 2027)"
+  },
+  {
+    "id": "en_date_ordinal_2nd_01",
+    "description": "English: April 2nd -> date with 2nd ordinal",
+    "query": "event April 2nd",
+    "mock_today": "2026-03-15",
+    "expected": "event April 2nd (Today is March 15, 2026, April 2nd is April 2, 2026)"
+  },
+  {
+    "id": "en_date_ordinal_3rd_01",
+    "description": "English: May 3rd -> date with 3rd ordinal",
+    "query": "party May 3rd",
+    "mock_today": "2026-03-15",
+    "expected": "party May 3rd (Today is March 15, 2026, May 3rd is May 3, 2026)"
+  },
+  {
+    "id": "en_complex_multi_01",
+    "description": "English: complex multiple time expressions",
+    "query": "meeting tomorrow, travel next weekend, Christmas party",
+    "mock_today": "2026-03-15",
+    "expected": "meeting tomorrow, travel next weekend, Christmas party (Today is March 15, 2026, tomorrow is March 16, 2026, next weekend is March 21, 2026 - March 22, 2026, Christmas is December 25, 2026)"
+  },
+  {
+    "id": "en_no_time_expression_01",
+    "description": "English: no time expression",
+    "query": "just a regular sentence",
+    "mock_today": "2026-03-15",
+    "expected": "just a regular sentence"
+  },
+  {
+    "id": "boundary_invalid_lunar_date_01",
+    "description": "边界测试：无效的农历日期（农历13月）",
+    "query": "农历13月15日",
+    "mock_today": "2026-03-15",
+    "expected": "农历13月15日"
+  },
+  {
+    "id": "boundary_invalid_gregorian_date_01",
+    "description": "边界测试：无效的公历日期（2月30日）",
+    "query": "2月30日开会",
+    "mock_today": "2026-03-15",
+    "expected": "2月30日开会"
+  },
+  {
+    "id": "boundary_invalid_month_01",
+    "description": "边界测试：无效的月份（13月）",
+    "query": "13月15日",
+    "mock_today": "2026-03-15",
+    "expected": "13月15日"
+  },
+  {
+    "id": "boundary_invalid_day_01",
+    "description": "边界测试：无效的日期（32日）",
+    "query": "3月32日",
+    "mock_today": "2026-03-15",
+    "expected": "3月32日"
+  },
+  {
+    "id": "en_boundary_invalid_date_01",
+    "description": "English boundary: invalid date (February 30)",
+    "query": "meeting February 30",
+    "mock_today": "2026-03-15",
+    "expected": "meeting February 30"
+  },
+  {
+    "id": "en_boundary_invalid_day_01",
+    "description": "English boundary: invalid day (32nd)",
+    "query": "event March 32nd",
+    "mock_today": "2026-03-15",
+    "expected": "event March 32nd"
+  },
+  {
+    "id": "cn_past_yesterday_01",
+    "description": "中文：昨天 -> 前一天",
+    "query": "昨天的会议记录",
+    "mock_today": "2026-03-15",
+    "expected": "昨天的会议记录（今天是2026 年 3 月 15 日，昨天是2026 年 3 月 14 日）"
+  },
+  {
+    "id": "cn_past_qiantian_01",
+    "description": "中文：前天 -> 两天前",
+    "query": "前天出发的火车",
+    "mock_today": "2026-03-15",
+    "expected": "前天出发的火车（今天是2026 年 3 月 15 日，前天是2026 年 3 月 13 日）"
+  },
+  {
+    "id": "cn_past_da_qiantian_01",
+    "description": "中文：大前天 -> 三天前",
+    "query": "大前天签的合同",
+    "mock_today": "2026-03-15",
+    "expected": "大前天签的合同（今天是2026 年 3 月 15 日，大前天是2026 年 3 月 12 日）"
+  },
+  {
+    "id": "cn_past_shangzhou_01",
+    "description": "中文：上周三 -> 上周三的具体日期",
+    "query": "上周三开会",
+    "mock_today": "2026-03-15",
+    "expected": "上周三开会（今天是2026 年 3 月 15 日，上周三是2026 年 3 月 4 日）"
+  },
+  {
+    "id": "cn_past_shangzhoumo_01",
+    "description": "中文：上周末 -> 上周六-周日",
+    "query": "上周末去爬山",
+    "mock_today": "2026-03-15",
+    "expected": "上周末去爬山（今天是2026 年 3 月 15 日，上周末是2026 年 3 月 7 日-2026 年 3 月 8 日）"
+  },
+  {
+    "id": "cn_past_shanggeyue_01",
+    "description": "中文：上个月 -> 上月范围",
+    "query": "上个月的账单",
+    "mock_today": "2026-03-15",
+    "expected": "上个月的账单（今天是2026 年 3 月 15 日，上个月是2026 年 2 月 1 日-2026 年 2 月 28 日）"
+  },
+  {
+    "id": "en_past_yesterday_01",
+    "description": "English: yesterday -> previous day",
+    "query": "the meeting yesterday",
+    "mock_today": "2026-03-15",
+    "expected": "the meeting yesterday (Today is March 15, 2026, yesterday is March 14, 2026)"
+  },
+  {
+    "id": "en_past_day_before_yesterday_01",
+    "description": "English: day before yesterday -> two days ago",
+    "query": "trip day before yesterday",
+    "mock_today": "2026-03-15",
+    "expected": "trip day before yesterday (Today is March 15, 2026, day before yesterday is March 13, 2026)"
+  },
+  {
+    "id": "en_past_last_week_01",
+    "description": "English: last week -> previous week range",
+    "query": "report from last week",
+    "mock_today": "2026-03-15",
+    "expected": "report from last week (Today is March 15, 2026, last week is March 2, 2026 - March 8, 2026)"
+  },
+  {
+    "id": "en_past_last_month_01",
+    "description": "English: last month -> previous month range",
+    "query": "bill from last month",
+    "mock_today": "2026-03-15",
+    "expected": "bill from last month (Today is March 15, 2026, last month is February 1, 2026 - February 28, 2026)"
+  },
+  {
+    "id": "en_past_last_monday_01",
+    "description": "English: last Monday -> previous Monday",
+    "query": "meeting last Monday",
+    "mock_today": "2026-03-15",
+    "expected": "meeting last Monday (Today is March 15, 2026, last Monday is March 2, 2026)"
+  }
+]

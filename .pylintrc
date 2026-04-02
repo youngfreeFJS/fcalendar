@@ -1,0 +1,27 @@
+[MAIN]
+# 忽略的模块
+ignore=tests
+
+[MESSAGES CONTROL]
+# 禁用一些过于严格的检查
+disable=
+    too-many-lines,
+    too-many-locals,
+    too-many-branches,
+    too-many-statements,
+    too-many-return-statements,
+    invalid-name,
+    broad-exception-caught,
+    consider-iterating-dictionary,
+    f-string-without-interpolation,
+    no-else-return,
+    import-outside-toplevel,
+    unused-variable,
+    redefined-outer-name,
+    reimported,
+    ungrouped-imports,
+    superfluous-parens
+
+[FORMAT]
+# 允许更长的行
+max-line-length=120
