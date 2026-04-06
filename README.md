@@ -10,6 +10,9 @@ A powerful Python library and CLI tool for recognizing and annotating Chinese/En
 [![PyPI](https://img.shields.io/pypi/v/fcalendar.svg)](https://pypi.python.org/pypi/fcalendar)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/fcalendar.svg)
 
+```bash
+pip install fcalendar -U
+```
 
 ## ✨ Features
 
