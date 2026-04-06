@@ -4,6 +4,13 @@ English | [简体中文](README_CN.md)
 
 A powerful Python library and CLI tool for recognizing and annotating Chinese/English time expressions, and querying Chinese public holiday schedules.
 
+
+# [PYPI](https://pypi.org/project/fcalendar/)
+
+[![PyPI](https://img.shields.io/pypi/v/fcalendar.svg)](https://pypi.python.org/pypi/fcalendar)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/fcalendar.svg)
+
+
 ## ✨ Features
 
 - 🌍 **Multi-language Support**: Automatic language detection, supports both Chinese and English input/output
